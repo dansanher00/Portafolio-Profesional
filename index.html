@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Sánchez Hernández | Portafolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="src/sass/style.scss">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box" style="border-radius: 50%;">
+          <img src="./src/img/dylan.png" alt="Dylan Sánchez Hernández" width="80" style="border-radius: 50%;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Dylan Sánchez Hernández">Dylan Sánchez</h1>
+          <p class="title">Ing. Industrial & Especialista en Calidad</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar contactos</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:dysanher@gmail.com" class="contact-link">dysanher@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+              <a href="tel:+522411062093" class="contact-link">+52 241 106 2093</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Cumpleaños</p>
+              <time datetime="2002-08-21">21 de agosto, 2002</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+              <address>Apizaco, Tlaxcala, México</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/dylan-s%C3%A1nchez-hern%C3%A1ndez-958693391" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.instagram.com/ddysanherr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>Sobre mí</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Currículum</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portafolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contacto</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="sobre mí">
+        <header><h2 class="h2 article-title">Sobre mí</h2></header>
+
+        <section class="about-text">
+          <p>
+            Soy <strong>Dylan Sánchez Hernández</strong>, Ingeniero Industrial en proceso de titulación con especialidad en <strong>Calidad y Manufactura 4.0</strong>. Me distingo por un enfoque estratégico y holístico en la gestión operativa.
+          </p>
+          <p>
+            Poseo dominio técnico en la aplicación de herramientas Lean y metodologías de mejora continua (5S, 8D, 5 Porqués y Análisis de Causa Raíz) para la solución efectiva de problemas. Me caracterizo por mi alta adaptabilidad, manejo de conflictos y capacidad para trabajar bajo presión con sentido de urgencia. Busco aportar mi disciplina y visión analítica para optimizar estándares y garantizar la excelencia operativa.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">Mis Enfoques</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/img/calidad.svg" alt="Calidad" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Gestión de Calidad</h4>
+                <p class="service-item-text">
+                  Experiencia en auditorías internas/externas y cumplimiento de normativas ISO/IATF.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/img/soluciones.svg" alt="Solución Problemas" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Solución de Problemas</h4>
+                <p class="service-item-text">
+                  Análisis de causa raíz, 8D y metodologías Lean para resolver conflictos y mejorar procesos.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/img/manufactura.svg" alt="Manufactura 4.0" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Manufactura 4.0</h4>
+                <p class="service-item-text">
+                  Integración de tecnología, SolidWorks y análisis de datos para el control operativo.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/img/pez.svg" alt="Disciplina" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Disciplina y Cultura</h4>
+                <p class="service-item-text">
+                  Practicante de Jiu Jitsu y escritura. Aplico la disciplina del deporte y la analítica de la lectura a mi labor profesional.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+      <article class="resume" data-page="currículum">
+        <header><h2 class="h2 article-title">Currículum</h2></header>
+
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">Educación</h3>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Tecnológico Nacional de México - Campus Apizaco</h4>
+            <span>2021 — 2025</span>
+            <p class="timeline-text">
+              <strong>Ingeniería Industrial</strong><br>
+              Especialidad en Calidad y Manufactura 4.0.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Experiencia Laboral</h3>
+          </div>
+          <ol class="timeline-list">
+            
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Quality Trainer - Inspección Recibo</h4>
+              <span>Grupo Cebi - Huamantla | Junio 2025 — Diciembre 2025</span>
+              <p class="timeline-text">
+                -Identificación de materiales no conformes, según
+                especificaciones del cliente: Piezas de inyección plástica,
+                piezas metálicas, recubrimientos, control de grasas y
+                resinas. <br>
+                -Uso de equipo de medición: Calibrador, comparador
+                óptico, medidor de espesores, sonómetro, torquímetro y
+                pruebas destructivas. <br>
+                -Manejo de proveedores.<br>
+                -Manejo de facturas.<br>
+                -Apoyo al proceso.           
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Jefe de Piso / Subgerencia</h4>
+              <span>Super Rivera | Agosto 2024 — Mayo 2025</span>
+              <p class="timeline-text">
+                Control operativo, manejo de conflictos, atención al cliente y gestión de personal en piso de venta.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Habilidades Técnicas</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft Excel</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SolidWorks</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Normativas ISO - 9001:2015</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Normativa IATF - 16949</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Inglés</h5>
+                <data value="65">65%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Six Sigma</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+      <article class="portfolio" data-page="portafolio">
+        <header><h2 class="h2 article-title">Certificaciones</h2></header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="manufactura">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./src/img/white-belt.png" alt="Optimización 5S" loading="lazy">
+                </figure>
+                <h3 class="project-title">WHITE BELT</h3>
+                <p class="project-category">Certificado</p>
+              </a>
+            </li>
+            </ul>
+        </section>
+      </article>
+
+      <article class="contact" data-page="contacto">
+        <header><h2 class="h2 article-title">Contacto</h2></header>
+        <section class="mapbox">
+          <figure>
+            <iframe src="https://maps.google.com/maps?q=Apizaco,Tlaxcala&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Formulario de Contacto</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Correo electrónico" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Tu mensaje" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar mensaje</span>
+            </button>
+          </form>
+        </section>
+      </article>
+
+    </div>
+  </main>
+
+  <script src="./src/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Botón "Show Contacts" en Sidebar */
+.info_more-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 0 15px;
+  font-size: 13px;
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
+  padding: 10px;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.info_more-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--bg-gradient-jet);
+  transition: var(--transition-1);
+  z-index: -1;
+}
+
+.info_more-btn:hover,
+.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
+.info_more-btn:hover::before,
+.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
+.info_more-btn span { display: none; }
+
+/* Botón de Formulario */
+.form-btn {
+  position: relative;
+  width: 100%;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.form-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.form-btn ion-icon { font-size: 16px; }
+.form-btn:hover { background: var(--bg-gradient-yellow-1); }
+.form-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+.form-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.form-btn:disabled:hover { background: var(--border-gradient-onyx); }
+.form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+/* Responsive Buttons */
+@media (min-width: 580px) {
+  .info_more-btn {
+    top: -30px;
+    right: -30px;
+    padding: 10px 15px;
+  }
+  .info_more-btn span {
+    display: block;
+    font-size: var(--fs-8);
+  }
+  .info_more-btn ion-icon { display: none; }
+  .form-btn {
+    --fs-6: 16px;
+    padding: 16px 20px;
+  }
+  .form-btn ion-icon { font-size: 18px; }
+}
+
+@media (min-width: 768px) {
+  .form-btn {
+    width: max-content;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .info_more-btn { display: none; }
+}
